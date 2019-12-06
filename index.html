@@ -37,7 +37,7 @@
 
     <!-- header-start -->
     <header>
-        <div class="header-area ">
+        <div class="header-area" >
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -88,10 +88,12 @@
             </div>
         </div>
     </header>
+
     <!-- header-end -->
 
     <!-- slider_area_start -->
     <div class="slider_area">
+
         <div class="single_slider  d-flex align-items-center slider_bg_1">
             <div class="shap_pattern d-none d-lg-block">
                 <img src="img/about/grid.png" alt="">
@@ -116,7 +118,10 @@
                 </div>
             </div>
         </div>
+      </canvas>
+
     </div>
+
     <!-- slider_area_end -->
 
     <!-- service_area  -->
@@ -302,6 +307,7 @@
             </div>
         </div>
     </div>
+    <canvas class="particle_background"></canvas>
 
     <!-- footer start -->
     <footer class="footer">
@@ -345,6 +351,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </footer>
+
     <!--/ footer end  -->
 
     <!-- JS here -->
@@ -366,6 +373,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+
+
 
     <!--contact js-->
     <script src="js/contact.js"></script>
@@ -377,6 +389,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+       window.onload = function() {
+         Particles.init({
+           selector: '.particle_background',
+           color: '#ffffff',
+           sizeVariations: '3',
+           responsive: 'null',
+           minDistance: '120'
+         });
+       };
+    </script>
     <script>
       var ctx = document.getElementById('myChart').getContext('2d');
       var myChart = new Chart(ctx, {
