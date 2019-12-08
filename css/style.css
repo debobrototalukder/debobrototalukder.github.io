@@ -21,6 +21,15 @@ body {
   pointer-events: none;
 }
 
+.flex{
+display: flex;
+}
+
+.img_size {
+    height: 70vh;
+    width: 10%;
+}
+
 .octa {
   height: 100vh;
   overflow: hidden;
@@ -32,7 +41,6 @@ body {
 
 .octa:after {
   background-image: url(../img/about/about.JPG);
-  background-position: center center;
   background-size: auto 100vh;
   bottom: 0;
   content: '';
@@ -2271,10 +2279,6 @@ h3 {
   width: 0px;
 }
 
-.img_size {
-  height: 70vh;
-    width: 15%;
-}
 
 /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_img .color_pattern {
