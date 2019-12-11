@@ -26,8 +26,7 @@ display: flex;
 }
 
 .img_size {
-    height: 70vh;
-    width: 10%;
+    float:right;
 }
 
 .octa {
@@ -2275,10 +2274,7 @@ h3 {
 /* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_img {
   position: relative;
-  height: 400px;
-  width: 0px;
 }
-
 
 /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_img .color_pattern {
